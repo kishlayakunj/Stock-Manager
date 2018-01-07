@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colourWhiteBackground"
+    tools:context="com.siementory.siementory.ProjectActivity">
+
+    <TextView
+        android:id="@+id/tvStockAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="What do you want to do?"
+        android:textColor="@color/colorSiemensDark"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btAddStock"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/tvStockAction"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="32dp"
+        android:background="@drawable/round_button"
+        android:text="Add stock"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btViewStock"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_above="@+id/btRegister"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/round_button"
+        android:text="View stock"
+        android:layout_marginBottom="20dp"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/btScarceStock"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignStart="@+id/btAddStock"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btAddStock"
+        android:background="@drawable/round_button"
+        android:text="Scarce stock"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btRegister"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignEnd="@+id/btViewStock"
+        android:layout_alignTop="@+id/btScarceStock"
+        android:background="@drawable/round_button"
+        android:text="Issue Register"
+        android:textColor="@android:color/background_light"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bt_curved"
+        android:layout_below="@id/btScarceStock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Sign out"
+        android:textColor="@color/colourWhiteBackground"
+        android:textStyle="bold"
+        android:id="@+id/btSignout"
+        />
+
+
+
+</RelativeLayout>

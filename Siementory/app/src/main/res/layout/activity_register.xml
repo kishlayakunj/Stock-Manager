@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colourWhiteBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.siementory.siementory.RegisterActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Choose your Option"
+        android:textStyle="bold"
+        android:textColor="@color/colorSiemensDark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tvRegisterChooseActivity"
+
+        />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Issue New Stock"
+        android:textColor="@color/colourWhiteBackground"
+        android:background="@drawable/bt_curved"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/tvRegisterChooseActivity"
+        android:id="@+id/btNewStockButton"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Issue History"
+        android:textColor="@color/colourWhiteBackground"
+        android:background="@drawable/bt_curved"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/btNewStockButton"
+        android:id="@+id/btIssueHistoryButton"
+        android:textSize="20sp"
+        />
+
+
+
+
+
+
+</RelativeLayout>

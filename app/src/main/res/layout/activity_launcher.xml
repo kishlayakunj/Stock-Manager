@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colourWhiteBackground"
+    tools:context="com.siementory.siementory.LauncherActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/siementory"
+        android:id="@+id/simentoryLogo" />
+
+    <TextView
+        android:id="@+id/simentoryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/simentoryLogo"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/bangers"
+        android:text="Siementory"
+        android:textColor="@color/colorSiemensDark"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/simentoryText"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/bubblegum_sans"
+        android:text="Managing stuffs that matter!"
+        android:textColor="@color/colorSiemensLight"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/loadingBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tagline"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>

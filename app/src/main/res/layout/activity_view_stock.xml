@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colourWhiteBackground"
+    tools:context="com.siementory.siementory.ViewStockActivity">
+
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="View All Stock"
+        android:background="@drawable/bt_curved"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvOr"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="55dp"
+        android:id="@+id/btViewAllStock"
+        android:textColor="@color/colourWhiteBackground"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/tvOr"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/etViewByName"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Search By Name"
+        android:id="@+id/etViewByName"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="55dp" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        android:layout_toRightOf="@id/etViewByName"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/search"
+        android:id="@+id/ivSearch"/>
+
+</RelativeLayout>

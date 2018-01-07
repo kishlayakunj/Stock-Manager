@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colourWhiteBackground"
+    tools:context="com.siementory.siementory.ChooseProjectActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome!"
+        android:textSize="22sp"
+        android:textColor="@color/colorSiemensDark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:id="@+id/tvWelcome"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What do you want?"
+        android:id="@+id/tvChooseProjectType"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_below="@id/tvWelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btNewProject"
+        android:layout_below="@id/tvChooseProjectType"
+        android:text="New Project"
+        android:background="@drawable/bt_curved"
+        android:textColor="@color/colourWhiteBackground"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btNewProject"
+        android:id="@+id/btExistingProject"
+        android:text="Existing project"
+        android:background="@drawable/bt_curved"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/colourWhiteBackground"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bt_curved"
+        android:layout_below="@id/btExistingProject"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Sign out"
+        android:textColor="@color/colourWhiteBackground"
+        android:textStyle="bold"
+        android:id="@+id/btSignout"
+        />
+
+</RelativeLayout>

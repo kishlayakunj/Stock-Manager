@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colourWhiteBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.siementory.siementory.EnterStockDetailsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Enter Stock Details"
+        android:layout_marginTop="20dp"
+        android:textSize="22sp"
+        android:textColor="@color/colorSiemensDark"
+        android:textStyle="bold"
+        android:id="@+id/tvAddStockDetails"
+        />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAddStockDetails"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Stock ID"
+        android:id="@+id/etStockID"
+        />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etStockID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Stock Name"
+        android:id="@+id/etStockName"
+        />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etStockName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Cost Per Item"
+        android:id="@+id/etCPI"
+        />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etCPI"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Quantity"
+        android:id="@+id/etQuantity"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bt_curved"
+        android:textStyle="bold"
+        android:textColor="@color/colourWhiteBackground"
+        android:text="add more"
+        android:layout_below="@id/etQuantity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/btAddMore"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bt_curved"
+        android:textStyle="bold"
+        android:textColor="@color/colourWhiteBackground"
+        android:text="Done"
+        android:layout_below="@id/btAddMore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btDone"
+        />
+        />
+
+
+</RelativeLayout>

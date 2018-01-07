@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colourWhiteBackground"
+    tools:context="com.siementory.siementory.SignupActivity">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Register your account"
+        android:textColor="@color/colorSiemensDark"
+        android:textSize="22sp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/tvRegisterAccount"
+        android:textStyle="bold"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/floatHintSignupEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/floatHintSignupName"
+        android:hint="Siemens Email ID"
+        >
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:inputType="textEmailAddress"
+        android:id="@+id/etSignupEmail"
+        android:layout_centerHorizontal="true"
+        />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/floatHintSignupName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvRegisterAccount"
+        android:layout_marginTop="20dp"
+        android:hint="Name"
+        >
+
+        <EditText
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="text"
+            android:id="@+id/etSignupName"
+
+            android:layout_centerHorizontal="true"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/floatHintSignupPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/floatHintSignupEmail"
+        android:hint="Password"
+        >
+
+
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/etSignupEmail"
+        android:layout_centerHorizontal="true"
+        android:inputType="textPassword"
+        android:id="@+id/etSignupPassword"
+        android:layout_marginLeft="20dp"
+        />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/floatHintSignupConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/floatHintSignupPassword"
+        android:hint="Confirm Password"
+        >
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/etSignupPassword"
+        android:inputType="textPassword"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/etSignupConfirmPassword"
+        android:layout_centerHorizontal="true"
+        />
+
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bt_curved"
+        android:textColor="@color/colourWhiteBackground"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Sign up"
+        android:id="@+id/btSignup"
+        android:layout_below="@id/floatHintSignupConfirmPassword"
+        />
+
+</RelativeLayout>

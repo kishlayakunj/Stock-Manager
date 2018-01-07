@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colourWhiteBackground"
+    tools:context="com.siementory.siementory.ViewSpecificStockActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Stock Name"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorSiemensDark"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:id="@+id/tvStockName"
+
+        />
+
+    <TextView
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:text="Stock ID             :"
+        android:textColor="@color/colorSiemensDark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvStockName"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tvStockID"
+        />
+
+    <TextView
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:text="Stock Quantity  :"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvStockID"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tvStockQuantity"
+        android:textColor="@color/colorSiemensDark"
+        />
+
+    <TextView
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorSiemensDark"
+        android:textStyle="bold"
+        android:text="Cost Per Item    :"
+        android:textSize="24sp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/tvStockQuantity"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvStockCPI"
+
+
+        />
+
+    <TextView
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorSiemensDark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="Value of Stock  :"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tvStockValue"
+        android:layout_below="@id/tvStockCPI"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="value"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/tvStockID"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/tvStockName"
+        android:layout_marginTop="35dp"
+        android:id="@+id/tvValueOne"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="value"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/tvStockQuantity"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/tvStockID"
+        android:layout_marginTop="35dp"
+
+        android:id="@+id/tvValueTwo"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvStockCPI"
+        android:text="value"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/tvStockQuantity"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tvValueThree"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="value"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/tvStockCPI"
+        android:layout_toRightOf="@id/tvStockValue"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tvValueFour"
+        />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="View Stock Issue History"
+        android:id="@+id/btStockHistory"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvStockValue"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/colourWhiteBackground"
+        android:background="@drawable/bt_curved"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colourWhiteBackground"
+    tools:context="com.siementory.siementory.NewProjectDetailsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter project details below"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorSiemensDark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/tvEnterProjectDetails"/>
+
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:hint="Project Name"
+        android:layout_below="@id/tvEnterProjectDetails"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/etProjectName_new"
+        android:textColorHint="@color/colorSiemensDark"
+        />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:hint="Supervisor Name"
+        android:layout_below="@id/etProjectName_new"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/etSupervisorName_new"
+        android:textColorHint="@color/colorSiemensDark"
+        />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:hint="Date (DD/MM/YYYY)"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/etSupervisorName_new"
+        android:id="@+id/etDateOfCommencement_new"
+        android:textColorHint="@color/colorSiemensDark"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:textStyle="bold"
+        android:textColor="@color/colourWhiteBackground"
+        android:background="@drawable/bt_curved"
+        android:id="@+id/btCreateProject"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etProjectPassword_new"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberPassword"
+        android:hint="4 Digit Pin"
+        android:layout_below="@id/etDateOfCommencement_new"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/colorSiemensDark"
+
+        android:id="@+id/etProjectPassword_new"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bt_curved"
+        android:layout_below="@id/btCreateProject"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Sign out"
+        android:textColor="@color/colourWhiteBackground"
+        android:textStyle="bold"
+        android:id="@+id/btSignout"
+        />
+
+
+</RelativeLayout>

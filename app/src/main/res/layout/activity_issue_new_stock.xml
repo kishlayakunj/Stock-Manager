@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colourWhiteBackground"
+    tools:context="com.siementory.siementory.IssueNewStockActivity">
+
+
+    <TextView
+        android:id="@+id/tvStockName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Stock Name"
+        android:textColor="@color/colorSiemensDark"
+        android:textSize="28sp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/tvIssueDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvStockName"
+        android:layout_centerHorizontal="true"
+        android:text="Issue Details"
+        android:textSize="22sp"
+        android:textColor="@color/colorSiemensLight"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tvQuantityPresent"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/tvReceiverName"
+        android:text="Quantity Present"
+        android:textColor="@color/colorSiemensDark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/tvQuantityIssue"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tvQuantityPresent"
+        android:layout_marginLeft="20dp"
+        android:text="Quantity to be issued"
+        android:textColor="@color/colorSiemensDark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tvReceiverName"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/tvQuantityPresent"
+        android:layout_below="@+id/tvIssueDetails"
+        android:layout_marginTop="20dp"
+        android:text="Reciever Name"
+        android:textColor="@color/colorSiemensDark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvDOI"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/tvQuantityIssue"
+        android:layout_below="@+id/tvQuantityIssue"
+        android:layout_marginTop="20dp"
+        android:text="Date of Issue"
+        android:textColor="@color/colorSiemensDark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+
+        />
+
+    <EditText
+        android:id="@+id/etDOI"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="date"
+        android:hint="MM/DD/YYYY"
+        android:textSize="20sp"
+        android:layout_below="@id/etIssueQuantity"
+        android:layout_toRightOf="@id/tvDOI"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/etIssueQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="number"
+
+        android:layout_above="@+id/tvDOI"
+        android:layout_toEndOf="@+id/tvQuantityIssue"
+        android:hint="Quantity issued"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/tvQuantityPresent"
+        android:layout_marginLeft="20dp"
+        android:paddingBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/tvQuantityExisting"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="numberDecimal"
+        android:digits="0123456789.,"
+        android:paddingTop="10dp"
+
+
+        android:layout_above="@+id/tvQuantityIssue"
+        android:layout_below="@id/etRecieverName"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/tvQuantityPresent"
+        android:text="Quantity present"
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp"
+
+      />
+
+    <EditText
+        android:id="@+id/etRecieverName"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/tvIssueDetails"
+        android:layout_marginTop="20dp"
+        android:hint="Receiver Name"
+        android:layout_toRightOf="@id/tvReceiverName"
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp"
+        android:paddingBottom="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDOI"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:background="@drawable/bt_curved"
+        android:layout_centerVertical="true"
+        android:id="@+id/btIssue"
+
+        android:text="Issue"
+        android:textColor="@color/colourWhiteBackground"
+        android:textStyle="bold" />
+
+</RelativeLayout>

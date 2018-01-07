@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "438308274205",
+    "firebase_url": "https://siementory-a0f2f.firebaseio.com",
+    "project_id": "siementory-a0f2f",
+    "storage_bucket": "siementory-a0f2f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438308274205:android:767c63a65fa9e8f3",
+        "android_client_info": {
+          "package_name": "com.siementory.siementory"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438308274205-ep2hss7jpq70ar857r8co9a5e8d5gd1i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.siementory.siementory",
+            "certificate_hash": "ad65b883c3e709af4f6d494a0a6d2e86714c979b"
+          }
+        },
+        {
+          "client_id": "438308274205-3fovtk199ro402a0gau3lj297foeto1a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwkP29gh7vk6uw06j9cdikWhvSG0d-3E4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "438308274205-3fovtk199ro402a0gau3lj297foeto1a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
